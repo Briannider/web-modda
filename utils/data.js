@@ -1,7 +1,7 @@
 const request = require('postman-request');
 
 const getAllProducts = (callback) => {
-    request('http://localhost:3001/products', (error, res, body) => {
+    request('https://api-modda-brian.herokuapp.com/products', (error, res, body) => {
         if(error){
           console.log('Error', error)  
           return callback(error, undefined);
